@@ -8,4 +8,5 @@
  */
 class BaseApiController extends \Core\Controller
 {
+    public $disableView = true;
 }

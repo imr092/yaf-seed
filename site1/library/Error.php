@@ -10,7 +10,6 @@
 namespace Lib;
 
 use LaravelArdent\Ardent\InvalidModelException;
-use Lib\Pn\Exception as PnException;
 use Request;
 use Session;
 
@@ -45,13 +44,6 @@ class Error
         if ($exception instanceof InvalidModelException) {
             pr($exception->getErrors()->toArray());
             exit;
-        }
-
-        if ($exception instanceof PnException) {
-            exit(json_encode([
-                'ret'   => 1,
-                'error' => $exception->getMessage(),
-            ]));
         }
 
         exit($exception->getMessage());
