@@ -1,0 +1,2 @@
+### crontab -e example
+#* * * * * /bin/sh /full/path/to/this/dir/example.sh >> /full/path/to/this/dir/log/example_log.log 2>&1

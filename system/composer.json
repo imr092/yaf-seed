@@ -1,0 +1,23 @@
+{
+  "require": {
+    "illuminate/database": "^5.4",
+    "monolog/monolog": "^1.22",
+    "illuminate/events": "^5.4",
+    "doctrine/dbal": "^2.5",
+    "phpunit/phpunit": "^6.2",
+    "laravelbook/ardent": "^3.4",
+    "illuminate/translation": "^5.4",
+    "curl/curl": "^1.6"
+  },
+  "autoload": {
+    "classmap": [
+      "core",
+      "library",
+      "models"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable"
+}
